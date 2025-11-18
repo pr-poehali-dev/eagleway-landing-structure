@@ -18,10 +18,11 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-600 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
+      <section className="relative bg-[#215AC0] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#215AC0] to-[#1a4a9f]"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA4IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
         
         <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -42,7 +43,7 @@ export default function Index() {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Потеряли 2 млн тенге на доставке из Китая?<br />
-              <span className="text-secondary">Мы возим БЕЗ ПОСРЕДНИКОВ</span> уже 10 лет
+              <span className="text-[#E9F1FF]">Мы возим БЕЗ ПОСРЕДНИКОВ</span> уже 10 лет
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 font-semibold">
@@ -57,13 +58,13 @@ export default function Index() {
                 { icon: 'FileText', text: 'Оформляем таможню под ключ' }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <Icon name={item.icon} size={24} className="text-secondary flex-shrink-0 mt-1" />
+                  <Icon name={item.icon} size={24} className="text-[#E9F1FF] flex-shrink-0 mt-1" />
                   <span className="text-lg">{item.text}</span>
                 </div>
               ))}
             </div>
             
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6 h-auto shadow-xl">
+            <Button size="lg" className="bg-[#215AC0] hover:bg-[#1a4a9f] text-white text-lg px-8 py-6 h-auto shadow-xl border-2 border-white/20">
               Узнать точную стоимость доставки
               <Icon name="ArrowRight" size={20} className="ml-2" />
             </Button>
@@ -108,8 +109,8 @@ export default function Index() {
                 </div>
               </Card>
               
-              <Card className="p-8 border-2 border-primary bg-blue-50/50 shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-primary flex items-center gap-2">
+              <Card className="p-8 border-2 border-[#215AC0] bg-[#E9F1FF] shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-[#215AC0] flex items-center gap-2">
                   <Icon name="CheckCircle" size={28} />
                   Eagleway
                 </h3>
@@ -122,7 +123,7 @@ export default function Index() {
                     'Оплата после получения'
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <Icon name="Check" size={20} className="text-primary flex-shrink-0 mt-1" />
+                      <Icon name="Check" size={20} className="text-[#215AC0] flex-shrink-0 mt-1" />
                       <span className="font-medium">{item}</span>
                     </div>
                   ))}
@@ -130,13 +131,13 @@ export default function Index() {
               </Card>
             </div>
             
-            <Card className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+            <Card className="mt-8 p-6 bg-[#E9F1FF] border-[#215AC0]/20">
               <div className="flex items-start gap-4">
-                <Icon name="TrendingDown" size={32} className="text-secondary flex-shrink-0" />
+                <Icon name="TrendingDown" size={32} className="text-[#215AC0] flex-shrink-0" />
                 <div>
                   <h4 className="text-xl font-bold mb-2">Мини-кейс</h4>
                   <p className="text-foreground/80">
-                    <strong>Асель из Алматы</strong> сэкономила <span className="text-secondary font-bold">850 000 тенге</span> на партии телефонов, 
+                    <strong>Асель из Алматы</strong> сэкономила <span className="text-[#215AC0] font-bold">850 000 тенге</span> на партии телефонов, 
                     потому что мы возим напрямую с завода Xiaomi
                   </p>
                 </div>
@@ -144,7 +145,7 @@ export default function Index() {
             </Card>
             
             <div className="text-center mt-8">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
+              <Button size="lg" className="bg-[#215AC0] hover:bg-[#1a4a9f] text-white">
                 Рассчитать экономию
                 <Icon name="Calculator" size={20} className="ml-2" />
               </Button>
@@ -154,7 +155,7 @@ export default function Index() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#FFFFFF]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -175,20 +176,20 @@ export default function Index() {
               ].map((stat, idx) => (
                 <Card key={idx} className="p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Icon name={stat.icon} size={32} className="text-primary" />
+                    <div className="w-16 h-16 rounded-full bg-[#E9F1FF] flex items-center justify-center">
+                      <Icon name={stat.icon} size={32} className="text-[#215AC0]" />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
+                  <div className="text-3xl font-bold text-[#215AC0] mb-2">{stat.number}</div>
                   <div className="font-semibold mb-1">{stat.label}</div>
                   <div className="text-sm text-muted-foreground">{stat.sub}</div>
                 </Card>
               ))}
             </div>
             
-            <Card className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20">
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Icon name="ShieldCheck" size={32} className="text-primary" />
+            <Card className="p-8 bg-[#E9F1FF] border-2 border-[#215AC0]/20">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-[#2A2A2A]">
+                <Icon name="ShieldCheck" size={32} className="text-[#215AC0]" />
                 ГАРАНТИРУЕМ в договоре:
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
@@ -199,17 +200,17 @@ export default function Index() {
                   'Бесплатное хранение 7 дней'
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <Icon name="BadgeCheck" size={20} className="text-secondary flex-shrink-0" />
+                    <Icon name="BadgeCheck" size={20} className="text-[#215AC0] flex-shrink-0" />
                     <span className="font-medium">{item}</span>
                   </div>
                 ))}
               </div>
             </Card>
             
-            <div className="mt-8 p-6 bg-muted/50 rounded-lg text-center">
+            <div className="mt-8 p-6 bg-[#F5F5F5] rounded-lg text-center">
               <p className="text-foreground/80">
                 <strong>Проверьте нас:</strong> БИН 201140009407, офис в БЦ Turar (Сейфуллина 502), 
-                звоните в любое время <a href="tel:+77089130403" className="text-primary font-bold hover:underline">+7 708 913 0403</a>
+                звоните в любое время <a href="tel:+77089130403" className="text-[#215AC0] font-bold hover:underline">+7 708 913 0403</a>
               </p>
             </div>
           </div>
@@ -217,7 +218,7 @@ export default function Index() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -236,12 +237,12 @@ export default function Index() {
               ].map((step, idx) => (
                 <div key={idx} className="relative">
                   <Card className="p-6 h-full hover:shadow-lg transition-shadow">
-                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#215AC0] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       {idx + 1}
                     </div>
                     <div className="flex justify-center mb-4 mt-4">
-                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                        <Icon name={step.icon} size={28} className="text-primary" />
+                      <div className="w-16 h-16 rounded-full bg-[#E9F1FF] flex items-center justify-center">
+                        <Icon name={step.icon} size={28} className="text-[#215AC0]" />
                       </div>
                     </div>
                     <h3 className="text-lg font-bold mb-3 text-center">{step.title}</h3>
@@ -251,15 +252,15 @@ export default function Index() {
               ))}
             </div>
             
-            <Card className="p-6 bg-primary/5 border-primary/20 text-center">
+            <Card className="p-6 bg-[#E9F1FF] border-[#215AC0]/20 text-center">
               <p className="text-lg font-semibold text-foreground/90">
-                <Icon name="Sparkles" size={20} className="inline mr-2 text-secondary" />
+                <Icon name="Sparkles" size={20} className="inline mr-2 text-[#215AC0]" />
                 Не нужно знать китайский. Не нужно разбираться в таможне. Просто отправьте ссылку.
               </p>
             </Card>
             
             <div className="text-center mt-8">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button size="lg" className="bg-[#215AC0] hover:bg-[#1a4a9f] text-white">
                 Отправить ссылку на товар
                 <Icon name="Send" size={20} className="ml-2" />
               </Button>
@@ -269,7 +270,7 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#FFFFFF]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -308,8 +309,8 @@ export default function Index() {
                   </div>
                   <p className="text-foreground/80 mb-4 italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Icon name="User" size={24} className="text-primary" />
+                    <div className="w-12 h-12 rounded-full bg-[#E9F1FF] flex items-center justify-center">
+                      <Icon name="User" size={24} className="text-[#215AC0]" />
                     </div>
                     <div>
                       <div className="font-bold">{testimonial.name}</div>
@@ -321,7 +322,7 @@ export default function Index() {
             </div>
             
             <div className="text-center">
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
+              <Button variant="outline" size="lg" className="border-[#215AC0] text-[#215AC0] hover:bg-[#215AC0] hover:text-white">
                 Все 1048 отзывов на 2GIS
                 <Icon name="ExternalLink" size={20} className="ml-2" />
               </Button>
@@ -334,8 +335,9 @@ export default function Index() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-blue-700 text-white">
-        <div className="container mx-auto px-4">
+      <section className="py-16 md:py-24 bg-[#215AC0] text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#215AC0] to-[#1a4a9f]"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
               Узнайте точную стоимость доставки ВАШЕГО товара за 37 секунд
@@ -373,7 +375,7 @@ export default function Index() {
                   />
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg">
+                <Button type="submit" size="lg" className="w-full bg-[#215AC0] hover:bg-[#1a4a9f] text-white text-lg border-2 border-white/20">
                   Получить расчет бесплатно
                   <Icon name="Send" size={20} className="ml-2" />
                 </Button>
@@ -381,15 +383,15 @@ export default function Index() {
               
               <div className="mt-8 space-y-3 text-sm text-foreground/80">
                 <div className="flex items-center gap-2 justify-center">
-                  <Icon name="Flame" size={18} className="text-secondary" />
+                  <Icon name="Flame" size={18} className="text-[#E9F1FF]" />
                   <span>Прямо сейчас 47 человек оформляют доставку</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center">
-                  <Icon name="Plane" size={18} className="text-secondary" />
+                  <Icon name="Plane" size={18} className="text-[#E9F1FF]" />
                   <span>Ближайшая отправка: послезавтра (осталось 3 места)</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center">
-                  <Icon name="Coins" size={18} className="text-secondary" />
+                  <Icon name="Coins" size={18} className="text-[#E9F1FF]" />
                   <span>Средняя экономия наших клиентов: 340 000 ₸ на партии</span>
                 </div>
               </div>
@@ -403,7 +405,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white py-12">
+      <footer className="bg-[#2A2A2A] text-white py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
             <div>
